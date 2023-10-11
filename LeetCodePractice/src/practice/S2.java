@@ -1,0 +1,126 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class S2 {
+
+	public static void main(String args[]) {
+		List<String> headers = new ArrayList();
+
+		headers.add("Insurance Company Name");
+		headers.add("Proposal No/ Application No");
+		headers.add("Proposal/ Application Date");
+		headers.add("Sourcing Channel");
+		headers.add("SP/ AV Code");
+		headers.add("SP/ AV Name");
+		headers.add("SP code License Start Date");
+		headers.add("SP code License Expiry Date");
+		headers.add("Proposer Name");
+		headers.add("Proposer Gender");
+		headers.add("Proposer DOB");
+		headers.add("Proposer Age");
+		headers.add("Flat No/ Street No");
+		headers.add("City");
+		headers.add("Dist");
+		headers.add("State");
+		headers.add("Pin Code");
+		headers.add("Proposer Mobile Number");
+		headers.add("Proposers alternate contact no");
+		headers.add("Proposer email id");
+		headers.add("Customer type (NRI/PIO/RI)");
+		headers.add("MWPA Flag (Y/N)");
+		headers.add("Polict type (Business Insurance) "
+				+ "(Employer Employee/ Partnership Insurance/ Key Man Insurance )");
+		headers.add("Life Assured Name");
+		headers.add("Life Gender");
+		headers.add("Life Assured DOB");
+		headers.add("Life Assured Age");
+		headers.add("Life Assured Flat No/ Street No");
+		headers.add("Life Assured City");
+		headers.add("Life Assured Dist");
+		headers.add("Life Assured State");
+		headers.add("Life Assured Pin Code");
+		headers.add("Life Assured Mobile Numbetr");
+		headers.add("Liife Assured alternate contact no");
+		headers.add("Life Assured email Id");
+		headers.add("Relationship of Proposer with Life Assured");
+		headers.add("Rider attached if any");
+		headers.add("Type of risk or cover");
+		headers.add("YBL Branch Code");
+		headers.add("Branch Name");
+		headers.add("Proposers PAN No");
+		headers.add("Adhar number id available");
+		headers.add("MLI Branch Code");
+		headers.add("MLI Branch Name");
+		headers.add("LAN Number");
+		headers.add("CAS");
+		headers.add("CustomerID");
+		headers.add("Adhar number if available");
+		headers.add("Credit Card a/c No");
+		headers.add("Master Policy No");
+		headers.add("Underwriting Done (Y/N)");
+		headers.add("Underwriting requirements if any");
+		headers.add("Underwritting Requirement ID");
+		headers.add("Date of receipt of underwriting requirement");
+		headers.add("Underwriting Status (Accept/Reject/postpone)");
+		headers.add("Reasons for rejection or postponemen & pending, as applicable");
+		headers.add("Date of Underwriters decision");
+		headers.add("Policy Issued (Y/N)");
+		headers.add("Policy Issuance Date");
+		headers.add("Policy No");
+		headers.add("Dates of commencement of Risk");
+		headers.add("Dates of Expiry of Risk");
+		headers.add("Sum Assured");
+		headers.add("Term of the policy");
+		headers.add("Premium paying term");
+		headers.add("Premium payment mode");
+		headers.add("Premium Frequency");
+		headers.add("Base Premium");
+		headers.add("GST");
+		headers.add("Total Premium Amount (with taxes)");
+		headers.add("Rider Premium");
+		headers.add("Total Premium (Base Policy + Rider)");
+		headers.add("Total Yearly Premium");
+		headers.add("Mode of Premium Payment");
+		headers.add("Total Premium Paid till date");
+		headers.add("All applicable taxes");
+		headers.add("Renewal Premium due date");
+		headers.add("Renewal Premium Amount (Base Policy + Rider)");
+		headers.add("Renewal Premium Paid (Y/N)");
+		headers.add("Date on which customer paid renewal remium");
+		headers.add("Mode of Renewal Premium Payment");
+		headers.add("Standing Instruction opted (Y/N)");
+		headers.add("Income Details as per insurer");
+		headers.add("Need Analysis Done Date");
+		headers.add("Date of dispatch of policy document");
+		headers.add("Date of receipt of policy document by the insured or proposer, as applicable");
+		headers.add("Account/Loan/Card/Inv Number");
+		headers.add("Supervisor Approval Date");
+		headers.add("Supervisor Emp Code");
+		headers.add("Supervisor Emp Name");
+		headers.add("Policy Status as on date ( Premium Paying, Surrendered, Matured, Lapse)");
+		headers.add("Policy Surrendered");
+		headers.add("Date of Surrender");
+		headers.add("Surrender Value Paid if any");
+		headers.add("Reason for surrender");
+		headers.add("Policy Matured (Y/N)");
+		headers.add("Date of Maturity");
+		headers.add("Reason for maturity ( Term Over/ Death)");
+		headers.add("Maturity Value paid");
+		headers.add("Policy Lapsed (Y/N)");
+		headers.add("Date of Lapse");
+		headers.add("Can be revived till");
+		headers.add("Revival date");
+		headers.add("No.of units");
+		headers.add("NAV value");
+		headers.add("Update in premium due to rateup/loading");
+		headers.add("Change in Premium");
+		headers.add("Change in Premium payment term");
+		headers.add("Change in Mode");
+		headers.add("Max Bill date(PPT)");
+		headers.add("Change in Standing Instruction Flag");
+
+	}
+
+}
