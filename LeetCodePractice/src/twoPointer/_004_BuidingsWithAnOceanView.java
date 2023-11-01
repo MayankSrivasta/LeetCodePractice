@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class _4_BuidingsWithAnOceanView {
+public class _004_BuidingsWithAnOceanView {
 
 	public static int[] findBuildings2(int[] heights) {
 		int n = heights.length;

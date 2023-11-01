@@ -1,6 +1,6 @@
 package twoPointer;
 
-public class _3_MaximumPointsYouCanObtainFromCards {
+public class _003_MaximumPointsYouCanObtainFromCards {
 
 	public static int maxScore(int[] cards, int k) {
 		int n = cards.length;
@@ -20,6 +20,9 @@ public class _3_MaximumPointsYouCanObtainFromCards {
 			max = Math.max(max, sum - window);
 			
 //			not able to understand below line of code properly
+//			check if below code can be written using 2 pointer, adding one more variable
+//			left variable to maintain left pointer for decrementing the value
+//			of the sliding window from left side.
 			window -= cards[i - (n - k - 1)];
 		}
 		return max;

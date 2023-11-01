@@ -1,6 +1,6 @@
 package twoPointer;
 
-public class _8_SubArraySort {
+public class _008_SubArraySort {
 
 //	Question/Answer Video link
 //	https://www.udemy.com/course/cpp-data-structures-algorithms-levelup-prateek-narang/learn/lecture/25191108#overview

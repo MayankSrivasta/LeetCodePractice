@@ -1,6 +1,6 @@
 package twoPointer;
 
-public class _10_MaximumSubArray {
+public class _010_MaximumSubArray {
 
 //	https://leetcode.com/problems/maximum-subarray/description/
 	

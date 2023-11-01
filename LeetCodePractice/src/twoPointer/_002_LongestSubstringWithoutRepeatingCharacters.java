@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class _2_LongestSubstringWithoutRepeatingCharacters {
+public class _002_LongestSubstringWithoutRepeatingCharacters {
 
 	public static void main(String args[]) {
 

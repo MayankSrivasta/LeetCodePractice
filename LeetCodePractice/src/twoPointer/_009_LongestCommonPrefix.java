@@ -1,6 +1,6 @@
 package twoPointer;
 
-public class _9_LongestCommonPrefix {
+public class _009_LongestCommonPrefix {
 
 //	Question/Answer Video link
 //	https://www.udemy.com/course/coding-interview-question-data-structures-algorithm/learn/lecture/17909208#overview

@@ -3,7 +3,7 @@ package twoPointer;
 import java.util.HashMap;
 import java.util.Map;
 
-public class _1_TwoSum {
+public class _001_TwoSum {
 	public int[] twoSum(int[] nums, int target) {
 		Map<Integer, Integer> hm = new HashMap<>();
 

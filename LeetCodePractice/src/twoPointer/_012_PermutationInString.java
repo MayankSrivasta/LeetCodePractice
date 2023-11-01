@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class _12_PermutationInString {
+public class _012_PermutationInString {
 
 //	Using HashMap
 	public boolean checkInclusion(String s1, String s2) {
@@ -75,19 +75,21 @@ public class _12_PermutationInString {
 			s2hash[s2.charAt(right) - 'a']++;
 			right++;
 		}
-		
+
 //		what is the purpose of this line
 		right--; // To point right to the end of the window
 
 		while (right < s2len) {
-			if (Arrays.equals(s1hash, s2hash)) {
+			if (Arrays.equals(s1hash, s2hash))
 				return true;
-			}
 
 			right++;
-			if (right != s2len) {
+			
+//		below line is just incrementing the value of the next character from S2 string into the sliding window.
+			if (right != s2len)
 				s2hash[s2.charAt(right) - 'a']++;
-			}
+
+//		below line is just decrementing/removing the value from the starting of the sliding window
 			s2hash[s2.charAt(left) - 'a']--;
 			left++;
 		}

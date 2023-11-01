@@ -1,7 +1,7 @@
 package twoPointer;
 
 //question type - hard
-public class _6_TrappingRainWater {
+public class _006_TrappingRainWater {
 
 //	solution from LeetCode
 	public int trap(int[] height) {
