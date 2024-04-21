@@ -43,5 +43,4 @@ public class _0004_BuidingsWithAnOceanView {
 		}
 		return ans.stream().mapToInt(i -> i).toArray();
 	}
-
 }
