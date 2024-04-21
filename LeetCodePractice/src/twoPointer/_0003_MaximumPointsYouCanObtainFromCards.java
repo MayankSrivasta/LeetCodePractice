@@ -1,7 +1,9 @@
 package twoPointer;
 
-public class _003_MaximumPointsYouCanObtainFromCards {
+public class _0003_MaximumPointsYouCanObtainFromCards {
 
+	
+//	difficult question
 	public static int maxScore(int[] cards, int k) {
 		int n = cards.length;
 		int sum = 0;

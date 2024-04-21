@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 //this ques is similar to PermutationInString
-public class _014_FindAllAnagramsInAString {
+public class _0014_FindAllAnagramsInAString {
 
 //	time complexity - O(alphabet size * length(s))
 

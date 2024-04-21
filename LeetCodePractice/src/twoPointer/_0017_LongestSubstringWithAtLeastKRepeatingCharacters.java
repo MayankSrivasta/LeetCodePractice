@@ -1,6 +1,6 @@
 package twoPointer;
 
-public class LongestSubstringWithAtLeastKRepeatingCharacters {
+public class _0017_LongestSubstringWithAtLeastKRepeatingCharacters {
 
 	public int longestSubstring(String s, int k) {
 		int freq[] = new int[26];

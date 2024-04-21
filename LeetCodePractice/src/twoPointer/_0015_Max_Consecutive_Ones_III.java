@@ -1,6 +1,6 @@
 package twoPointer;
 
-public class _015_Max_Consecutive_Ones_III {
+public class _0015_Max_Consecutive_Ones_III {
 
 	public static int longestOnes(int[] nums, int k) {
 

@@ -1,6 +1,6 @@
 package twoPointer;
 
-public class _013_MinimumSizeSubArraySum {
+public class _0013_MinimumSizeSubArraySum {
 
 	public static int minSubArrayLen(int s, int[] nums) {
 		int n = nums.length;

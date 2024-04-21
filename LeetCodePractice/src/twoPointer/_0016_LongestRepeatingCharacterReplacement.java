@@ -3,7 +3,7 @@ package twoPointer;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LongestRepeatingCharacterReplacement {
+public class _0016_LongestRepeatingCharacterReplacement {
 
 //	using hashmap
 	public int characterReplacement1(String s, int k) {

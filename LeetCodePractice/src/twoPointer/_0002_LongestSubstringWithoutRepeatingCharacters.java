@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class _002_LongestSubstringWithoutRepeatingCharacters {
+public class _0002_LongestSubstringWithoutRepeatingCharacters {
 
 	public static void main(String args[]) {
 
@@ -15,7 +15,8 @@ public class _002_LongestSubstringWithoutRepeatingCharacters {
 //	Using MAP
 //	this only returns the length of the substring
 	public static int withHashMap(String str) {
-
+//   whole approach is same as what we have in sliding window for the set based solution approach
+//		just try to imagine pictorial sliding window moving in the same manner as what we have in the set based solution approach
 		Map<Character, Integer> hm = new HashMap<>();
 		int i = 0, ans = 0;
 		int len = str.length();
@@ -25,7 +26,7 @@ public class _002_LongestSubstringWithoutRepeatingCharacters {
 			if (hm.containsKey(ch))
 				i = Math.max(hm.get(ch) + 1, i);
 
-			hm.put(str.charAt(j), j);
+			hm.put(ch, j);
 			ans = Math.max(ans, j - i + 1);
 		}
 

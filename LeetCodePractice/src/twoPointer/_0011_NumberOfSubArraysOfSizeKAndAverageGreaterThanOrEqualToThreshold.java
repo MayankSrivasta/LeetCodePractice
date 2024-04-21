@@ -1,6 +1,6 @@
 package twoPointer;
 
-public class _011_NumberOfSubArraysOfSizeKAndAverageGreaterThanOrEqualToThreshold {
+public class _0011_NumberOfSubArraysOfSizeKAndAverageGreaterThanOrEqualToThreshold {
 
 	public int numOfSubarrays(int[] arr, int k, int threshold) {
 		int currSum = 0; // For storing the sum value of window size

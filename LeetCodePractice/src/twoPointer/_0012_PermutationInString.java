@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class _012_PermutationInString {
+public class _0012_PermutationInString {
 
 //	Using HashMap
 	public boolean checkInclusion(String s1, String s2) {

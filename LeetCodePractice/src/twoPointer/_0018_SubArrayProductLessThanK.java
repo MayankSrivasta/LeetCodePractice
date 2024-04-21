@@ -1,6 +1,6 @@
 package twoPointer;
 
-public class SubArrayProductLessThanK {
+public class _0018_SubArrayProductLessThanK {
 
 	public static int numSubarrayProductLessThanK(int[] nums, int k) {
 		int i = 0, n = nums.length, product = 1, result = 0;
