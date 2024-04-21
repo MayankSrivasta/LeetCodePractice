@@ -1,6 +1,11 @@
 package twoPointer;
 
 //question type - hard
+
+
+//https://leetcode.com/problems/trapping-rain-water/
+
+
 public class _0006_TrappingRainWater {
 
 //	solution from LeetCode
