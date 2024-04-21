@@ -2,11 +2,33 @@ package twoPointer;
 
 //question type - hard
 
-
 //https://leetcode.com/problems/trapping-rain-water/
 
-
 public class _0006_TrappingRainWater {
+
+//	solution from AlgoJS youtube
+//	more easy solution
+	public int trap3(int[] height) {
+		int left = 0, right = height.length - 1, leftMax = 0, rightMax = 0, water = 0;
+
+		while (left < right) {
+
+			leftMax = Math.max(leftMax, height[left]);
+			rightMax = Math.max(rightMax, height[right]);
+
+			if (height[left] < height[right]) {
+
+				water += leftMax - height[left];
+				left++;
+
+			} else {
+
+				water += rightMax - height[right];
+				right--;
+			}
+		}
+		return water;
+	}
 
 //	solution from LeetCode
 	public int trap(int[] height) {
