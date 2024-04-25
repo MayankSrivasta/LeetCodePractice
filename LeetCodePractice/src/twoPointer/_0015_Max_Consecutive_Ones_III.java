@@ -2,6 +2,14 @@ package twoPointer;
 
 public class _0015_Max_Consecutive_Ones_III {
 
+//	https://leetcode.com/problems/max-consecutive-ones-iii/description/
+
+	/*
+	 * Input: nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2 Output: 6 Explanation:
+	 * [1,1,1,0,0,1,1,1,1,1,1] Bolded numbers were flipped from 0 to 1. The longest
+	 * subarray is underlined.
+	 */
+
 	public static int longestOnes(int[] nums, int k) {
 
 		int left = 0;
@@ -36,25 +44,30 @@ public class _0015_Max_Consecutive_Ones_III {
 	}
 
 	public static void main(String args[]) {
-		System.out.println(longestOnes(new int[] { 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0 }, 2));
+		System.out.println(longestOnes2(new int[] { 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0 }, 2));
 	}
 
 //	another appraoch from Nick White, below one is bit easier to understand
-	public int longestOnes2(int[] A, int k) {
+//	https://www.youtube.com/watch?v=97oTiOCuxho&t=311s
+	public static int longestOnes2(int[] A, int k) {
 		int i = 0;
 		int j = 0;
-		while (i < A.length) {
-			if (A[i] == 0)
+		while (j < A.length) {
+			if (A[j] == 0)
 				k--;
 
+			
 			if (k < 0) {
-				if (A[j] == 0)
+				if (A[i] == 0)
 					k++;
-				j++;
+				i++;
 			}
-			i++;
+			
+			
+			
+			j++;
 		}
-		return i - j;
+		return j - i;
 	}
 
 }

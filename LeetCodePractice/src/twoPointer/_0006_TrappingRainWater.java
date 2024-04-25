@@ -17,7 +17,6 @@ public class _0006_TrappingRainWater {
 			rightMax = Math.max(rightMax, height[right]);
 
 			if (height[left] < height[right]) {
-
 				water += leftMax - height[left];
 				left++;
 
