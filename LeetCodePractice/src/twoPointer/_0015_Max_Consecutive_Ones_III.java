@@ -44,7 +44,7 @@ public class _0015_Max_Consecutive_Ones_III {
 	}
 
 	public static void main(String args[]) {
-		System.out.println(longestOnes2(new int[] { 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0 }, 2));
+		System.out.println(longestOnes2(new int[] { 1, 1, 1, 0, 0, 0, 1, 1, 1}, 2));
 	}
 
 //	another appraoch from Nick White, below one is bit easier to understand
@@ -56,15 +56,12 @@ public class _0015_Max_Consecutive_Ones_III {
 			if (A[j] == 0)
 				k--;
 
-			
 			if (k < 0) {
 				if (A[i] == 0)
 					k++;
 				i++;
 			}
-			
-			
-			
+
 			j++;
 		}
 		return j - i;
