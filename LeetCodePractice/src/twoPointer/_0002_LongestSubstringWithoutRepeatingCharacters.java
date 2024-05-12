@@ -9,7 +9,7 @@ public class _0002_LongestSubstringWithoutRepeatingCharacters {
 
 	public static void main(String args[]) {
 
-		System.out.println(withHashMap("abcbabb"));
+		System.out.println(withHashMap("abcabcbb"));
 	}
 
 //	Using MAP
@@ -23,6 +23,8 @@ public class _0002_LongestSubstringWithoutRepeatingCharacters {
 		for (int j = 0; j < len; j++) {
 			char ch = str.charAt(j);
 
+//			the purpose of using hashmap over here is just to maintain that the specific element
+//			is visit & the last element visited location to be maintained.
 			if (hm.containsKey(ch))
 				i = Math.max(hm.get(ch) + 1, i);
 
@@ -52,7 +54,6 @@ public class _0002_LongestSubstringWithoutRepeatingCharacters {
 		return ans;
 	}
 
-//	Using SET
 //	from LeetCode Submissions -> more easy to understand
 	public int lengthOfLongestSubstring(String str) {
 
