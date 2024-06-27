@@ -1,6 +1,6 @@
-package twoPointer;
+package twoPointerSlidingWindow;
 
-public class _0015_Max_Consecutive_Ones_III {
+public class _0011_Max_Consecutive_Ones_III {
 
 //	https://leetcode.com/problems/max-consecutive-ones-iii/description/
 

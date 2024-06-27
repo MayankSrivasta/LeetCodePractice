@@ -1,4 +1,4 @@
-package twoPointer;
+package twoPointerSlidingWindow;
 
 //question type - hard
 

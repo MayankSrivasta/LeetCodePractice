@@ -1,10 +1,10 @@
-package twoPointer;
+package twoPointerSlidingWindow;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class _0012_PermutationInString {
+public class _0008_PermutationInString {
 
 //	Using HashMap
 	public boolean checkInclusion(String s1, String s2) {

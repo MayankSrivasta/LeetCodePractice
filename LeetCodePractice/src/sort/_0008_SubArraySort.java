@@ -1,4 +1,4 @@
-package twoPointer;
+package sort;
 
 public class _0008_SubArraySort {
 

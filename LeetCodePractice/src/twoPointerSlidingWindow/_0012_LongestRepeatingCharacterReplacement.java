@@ -1,9 +1,9 @@
-package twoPointer;
+package twoPointerSlidingWindow;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class _0016_LongestRepeatingCharacterReplacement {
+public class _0012_LongestRepeatingCharacterReplacement {
 
 //	using hashmap
 	public int characterReplacement1(String s, int k) {

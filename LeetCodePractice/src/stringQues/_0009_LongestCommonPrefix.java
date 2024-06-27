@@ -1,4 +1,4 @@
-package twoPointer;
+package stringQues;
 
 public class _0009_LongestCommonPrefix {
 

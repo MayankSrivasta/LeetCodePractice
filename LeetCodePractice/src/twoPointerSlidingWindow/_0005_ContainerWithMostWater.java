@@ -1,4 +1,4 @@
-package twoPointer;
+package twoPointerSlidingWindow;
 
 public class _0005_ContainerWithMostWater {
 

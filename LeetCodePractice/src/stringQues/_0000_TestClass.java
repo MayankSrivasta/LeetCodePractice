@@ -1,4 +1,4 @@
-package twoPointer;
+package stringQues;
 
 import java.util.HashMap;
 import java.util.Map;
