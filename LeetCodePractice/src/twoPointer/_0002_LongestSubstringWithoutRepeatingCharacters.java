@@ -23,8 +23,11 @@ public class _0002_LongestSubstringWithoutRepeatingCharacters {
 		for (int j = 0; j < len; j++) {
 			char ch = str.charAt(j);
 
-//			in here 
 			if (hm.containsKey(ch))
+//				here we are getting the value of the duplicate element & incrementing it by 1, so that
+//				its similar how we have in set we completely remove the duplicate element, similary
+//				here also we are complemently remvoing the duplicate element and returning its next adjacent
+//				element field position
 				i = Math.max(hm.get(ch) + 1, i);
 
 			hm.put(ch, j);
