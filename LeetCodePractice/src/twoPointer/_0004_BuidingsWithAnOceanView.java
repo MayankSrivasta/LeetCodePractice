@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class _0004_BuidingsWithAnOceanView {
+	
+//	4,2,3,1
+//	1, 3, 4
 
 	public static int[] findBuildings2(int[] heights) {
 		int n = heights.length;
