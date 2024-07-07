@@ -20,6 +20,9 @@ public class _0012_LongestRepeatingCharacterReplacement {
 
 			maxRepeatCount = Math.max(maxRepeatCount, map1.get(curr));
 
+//			this is the most important line which actually determines
+//			whether there is any non-repeating characters in the given (positions of i & j
+//			for the given) substring. 
 			int nonrepeat = (right - left + 1) - maxRepeatCount;
 
 			if (nonrepeat > k) {

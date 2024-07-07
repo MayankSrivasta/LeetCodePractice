@@ -43,12 +43,10 @@ public class _0011_Max_Consecutive_Ones_III {
 		return maxCons;
 	}
 
-	public static void main(String args[]) {
-		System.out.println(longestOnes2(new int[] { 1, 1, 1, 0, 0, 0, 1, 1, 1}, 2));
-	}
-
 //	another appraoch from Nick White, below one is bit easier to understand
 //	https://www.youtube.com/watch?v=97oTiOCuxho&t=311s
+	
+//	this approach is the faster execution time
 	public static int longestOnes2(int[] A, int k) {
 		int i = 0;
 		int j = 0;
@@ -67,43 +65,36 @@ public class _0011_Max_Consecutive_Ones_III {
 		return j - i;
 	}
 
-}
+//	nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2
 
-/*
- * Here's a step-by-step explanation of the code:
- * 
- * Initialize two pointers, left and right, to 0. These pointers will help keep
- * track of the current window of elements.
- * 
- * Initialize a variable maxCons to 0. This variable will store the maximum
- * length of consecutive ones encountered so far.
- * 
- * Start a loop that iterates through the nums array using the right pointer.
- * The loop continues until the right pointer reaches the end of the array.
- * 
- * Inside the loop, decrement k by 1 - nums[right]. The expression 1 -
- * nums[right] will be 0 if nums[right] is 1, and 1 if nums[right] is 0. This
- * effectively counts the number of zeros encountered in the current window.
- * 
- * Check if k becomes negative, indicating that we have encountered more zeros
- * than allowed in the current window. If k is negative, we need to adjust the
- * window to continue the search for a longer sequence of consecutive ones.
- * 
- * If k is negative, we increment k by 1 - nums[left] and increment the left
- * pointer. This step effectively "slides" the window to the right by removing
- * elements from the left side of the window.
- * 
- * If k is still non-negative (i.e., we haven't exceeded the allowed number of
- * flips), calculate the current length of consecutive ones in the window using
- * right - left + 1. Update maxCons with the maximum of its current value and
- * this calculated length.
- * 
- * Repeat the process by moving the right pointer to the right in the nums array
- * and continue checking for the longest sequence of consecutive ones with at
- * most k flips.
- * 
- * After the loop is complete, return the value of maxCons, which represents the
- * length of the longest sequence of consecutive ones with at most k flips
- * encountered in the entire array.
- * 
- */
+	public static void main(String args[]) {
+		System.out.println(longestOnes2(new int[] { 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0 }, 2));
+	}
+
+//	this approach is much more easier, because here we stops the increment of j untill we get the 1st i'th position
+//	of 0's
+//	
+	public static int longestOnes3(int[] nums, int k) {
+//		https://www.youtube.com/watch?v=ROuOZongV6I&list=PL1MJrDFRFiKZYea2EAfuNJ9aosbpIlAf5&index=5
+
+//		Ayushi Sharma easy solution
+//		https://www.youtube.com/watch?v=Gl-8HLvV8bc&t=141s
+
+		int zerocount = 0, i = 0;
+		int result = 0;
+
+		for (int j = 0; j < nums.length; j++) {
+			if (nums[j] == 0)
+				zerocount++;
+
+			while (zerocount > k) {
+				if (nums[i] == 0)
+					zerocount--;
+				i++;
+			}
+			result = Math.max(result, j - i + 1);
+		}
+
+		return result;
+	}
+}
