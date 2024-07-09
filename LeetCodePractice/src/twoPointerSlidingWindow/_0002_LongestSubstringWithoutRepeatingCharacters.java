@@ -8,7 +8,6 @@ import java.util.Set;
 public class _0002_LongestSubstringWithoutRepeatingCharacters {
 
 	public static void main(String args[]) {
-
 		System.out.println(withHashMap("abcabcbb"));
 	}
 

@@ -10,6 +10,7 @@ public class _0011_Max_Consecutive_Ones_III {
 	 * subarray is underlined.
 	 */
 
+//	APPROACH - 1
 	public static int longestOnes(int[] nums, int k) {
 
 		int left = 0;
@@ -43,9 +44,10 @@ public class _0011_Max_Consecutive_Ones_III {
 		return maxCons;
 	}
 
+//	APPROACH - 2
 //	another appraoch from Nick White, below one is bit easier to understand
 //	https://www.youtube.com/watch?v=97oTiOCuxho&t=311s
-	
+
 //	this approach is the faster execution time
 	public static int longestOnes2(int[] A, int k) {
 		int i = 0;
@@ -65,6 +67,23 @@ public class _0011_Max_Consecutive_Ones_III {
 		return j - i;
 	}
 
+//	APPROACH - 3
+//	above one same approach just with using variable COUNT also
+	public int longestOnes4(int[] nums, int k) {
+		int i = 0, j = 0, count = 0;
+
+		for (j = 0; j < nums.length; j++) {
+			if (nums[j] == 0)
+				count++;
+			if (count > k) {
+				if (nums[i] == 0)
+					count--;
+				i++;
+			}
+		}
+		return j - i;
+	}
+
 //	nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2
 
 	public static void main(String args[]) {
@@ -74,6 +93,8 @@ public class _0011_Max_Consecutive_Ones_III {
 //	this approach is much more easier, because here we stops the increment of j untill we get the 1st i'th position
 //	of 0's
 //	
+
+//	APPROACH - 4
 	public static int longestOnes3(int[] nums, int k) {
 //		https://www.youtube.com/watch?v=ROuOZongV6I&list=PL1MJrDFRFiKZYea2EAfuNJ9aosbpIlAf5&index=5
 
