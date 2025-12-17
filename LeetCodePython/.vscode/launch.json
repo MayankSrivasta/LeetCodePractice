@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "java",
+        "name": "_0024_FindWordsThatCanBeFormedByCharacters",
+        "request": "launch",
+        "mainClass": "_0001_ArrayAndHashing._0024_FindWordsThatCanBeFormedByCharacters",
+        "projectName": "LeetCodePython_a728ed22"
+      },
+      {
+        "type": "java",
+        "name": "_0021_MonotonicArray",
+        "request": "launch",
+        "mainClass": "_0001_ArrayAndHashing._0021_MonotonicArray",
+        "projectName": "LeetCodePython_a728ed22"
+      },
+      {
+        "name": "Python: Current File",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Java: Current File",
+        "type": "java",
+        "request": "launch",
+        "mainClass": "${fileBasenameNoExtension}",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}"
+      }
+    ]
+  }
