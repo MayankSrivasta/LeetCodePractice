@@ -21,6 +21,7 @@ class Solution:
                 res = max(res, i - idx)
 
         return res
+#====================================================================================================
     
     # https://www.youtube.com/watch?v=Xkl4EknqW8Y&t=617s    watch video from 2 minutes
     def findMaxLength(self, nums: List[int]) -> int:

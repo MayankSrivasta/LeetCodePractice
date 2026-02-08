@@ -14,7 +14,9 @@ class Solution:
             if k == 0:
                 return s
         return ""
-    
+
+#====================================================================================================
+
 #   using Counter approach
     def kthDistinct(self, arr: List[str], k: int) -> str:
         count = Counter(arr)

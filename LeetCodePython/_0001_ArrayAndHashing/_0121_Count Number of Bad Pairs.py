@@ -12,6 +12,7 @@ class Solution:
             count[key] += 1
         return total_pairs - good_pair
 
+#====================================================================================================
 
 # Intuition
 # Let’s first understand the condition:

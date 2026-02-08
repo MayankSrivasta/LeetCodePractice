@@ -19,20 +19,52 @@ class Solution:
 
         # Map results for nums1 based on nums2
         return [next_greater[num] for num in nums1]
-    
 
-# without comments easy to understand
+#====================================================================================================
+
+# chatgpt solution without comments:-
+class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        map = {}
-        for i in range(len(nums2)):
-            map[nums2[i]] = -1
-            for j in range(i + 1, len(nums2)):
-                if nums2[i] < nums2[j]:
-                    map[nums2[i]] = nums2[j]
-                    break
-        
-        return [map[num] for num in nums1]
-        
+        stack = []
+        nextGreater = {}
+
+        for n in nums2:
+            while stack and stack[-1] < n:
+                nextGreater[stack.pop()] = n
+            stack.append(n)
+
+        while stack:
+            nextGreater[stack.pop()] = -1
+
+        return [nextGreater[n] for n in nums1]
+
+#====================================================================================================
+
+# Key Pattern Recognition
+
+# When a problem asks:
+# “Next greater/smaller to the right/left”
+
+# Immediately think:
+# ✔ Monotonic Stack
+# Variants:
+
+# Query	Stack Type:-
+# next greater	     ->   decreasing stack
+# next smaller	     ->   increasing stack
+# previous greater   ->	  decreasing left
+# previous smaller   ->	  increasing left
+
+# | Query            | Side  | Comparison | Scan | Stack      |
+# | ---------------- | ----- | ---------- | ---- | ---------- |
+# | next greater     | right | >          | →    | decreasing |
+# | next smaller     | right | <          | →    | increasing |
+# | previous greater | left  | >          | ←    | decreasing |
+# | previous smaller | left  | <          | ←    | increasing |
+
+
+#====================================================================================================
+
 # same code as above just with comments
     # using HASHMAP
     # O(n2)

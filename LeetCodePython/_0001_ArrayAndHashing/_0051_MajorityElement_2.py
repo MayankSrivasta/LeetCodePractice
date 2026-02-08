@@ -15,4 +15,3 @@ class Solution:
     
     # solve the problem in linear time and in O(1) space?
     # https://neetcode.io/solutions/majority-element-ii
-

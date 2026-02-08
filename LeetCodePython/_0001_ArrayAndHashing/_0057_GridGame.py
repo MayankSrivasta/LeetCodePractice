@@ -13,6 +13,8 @@ class Solution:
             bottom_sum += grid[1][i]
         return result    
 
+#====================================================================================================
+
     # approach - 1
     def gridGame(self, grid: List[List[int]]) -> int:
         N = len(grid[0])
@@ -29,7 +31,9 @@ class Solution:
             secondRobot = max(top, bottom)
             res = min(res, secondRobot)
         return res
-    
+
+#====================================================================================================
+
     # approach - 2      Neetcode.io PrefixSum Space Optimized
     def gridGame2(self, grid: List[List[int]]) -> int:
         res = float("inf")
@@ -43,7 +47,8 @@ class Solution:
 
         return res
     
-    
+#====================================================================================================
+
     # approach - 3
     def gridGame3(self, grid: List[List[int]]) -> int:
         sum_top = sum(grid[0]) - grid[0][0]
@@ -55,7 +60,9 @@ class Solution:
             sum_bottom += grid[1][partition-1]
             res = min(res, max(sum_top, sum_bottom))
         return res
-    
+
+#====================================================================================================
+
     # solution from AlgoMaster website      https://algo.monster/liteproblems/2017
     # this one has minimum number of lines of codes
     def gridGame(self, grid: List[List[int]]) -> int:

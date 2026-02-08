@@ -9,6 +9,7 @@ class Solution:
 
         return i == len(s)
 
+# ====================================================================================================
 
 # A subsequence of a string is a new string that is formed from the original string by 
 # deleting some (can be none) of the characters without disturbing the relative positions 
@@ -26,3 +27,5 @@ class Solution:
                 j += 1
             i += 1
         return len(t) - j
+    
+# ====================================================================================================

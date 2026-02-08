@@ -22,16 +22,27 @@ class Solution:
             right -= 1
         
         return True
-
+    # testing github
+#====================================================================================================
 
 # reverse string
     def isPalindrome(self, s: str) -> bool:
-        newStr = ''
+        new = []
         for c in s:
             if c.isalnum():
-                newStr += c.lower()
-        return newStr == newStr[::-1]
-    
+                new.append(c.lower())
+
+        return new == new[::-1]
+
+# Examples:
+# s[::2] → every other char
+# s[1::] → from index 1 to end
+# s[:3] → first 3 characters
+# s[::-1] → reversed
+
+# ✔ new[::-1] creates a new reversed string/list
+# ✔ Does NOT reverse in-place
+# ✔ So time = O(n), space = O(n)
 
 #     The general syntax of slicing is:
 #     string[start:stop:step]

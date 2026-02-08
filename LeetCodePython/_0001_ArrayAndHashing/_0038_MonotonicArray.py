@@ -10,7 +10,9 @@ class Solution:
                 if not (nums[i] >= nums[i + 1]):
                     decrease = False
             return increase or decrease
-    
+
+#====================================================================================================
+
     # APPROACH - 2    
     def isMonotonic(self, nums: List[int]) -> bool:
         increasing, decreasing = True, True

@@ -17,7 +17,10 @@ class Solution:
             result.extend([c] * freq)
 
         return result
-    
+
+#====================================================================================================
+
+
 # chatgpt
 class Solution:
     def commonChars(self, words):

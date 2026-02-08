@@ -18,6 +18,7 @@ class Solution:
                 return False
         return sentence[0] == sentence[-1]
     
+#====================================================================================================
 
 # chatgpt
 def isCircularSentence(sentence: str) -> bool:

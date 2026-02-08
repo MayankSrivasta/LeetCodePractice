@@ -12,7 +12,9 @@ class Solution:
             total += order
             t += order
         return total / len(customers)
-    
+
+#====================================================================================================
+
 
     def averageWaitingTime(self, customers: List[List[int]]) -> float:
         t = 0

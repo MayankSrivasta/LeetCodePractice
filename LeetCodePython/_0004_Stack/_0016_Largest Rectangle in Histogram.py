@@ -1,21 +1,24 @@
 from typing import List
 class Solution:
-    # chatgpt
+
+# updated NC code with append(0)
     def largestRectangleArea(self, heights: List[int]) -> int:
-        stack = []  # stores indices
-        max_area = 0
-        heights.append(0)  # Append a dummy bar to flush out remaining stack elements
-
+        stack = []
+        maxArea = 0
+        heights.append(0)
         for i, h in enumerate(heights):
-            while stack and heights[stack[-1]] > h:
-                height = heights[stack.pop()]
-                width = i if not stack else i - stack[-1] - 1
-                max_area = max(max_area, height * width)
-            stack.append(i)
+            start = i
+            while stack and stack[-1][1] > h:
+                idx, v = stack.pop()
+                w = i - idx
+                maxArea = max(maxArea, v * w)
+                start = idx
+            stack.append((start, h))
+        return maxArea
+    
+###############################################################################################
 
-        return max_area
 
-# neetcode.io
     def largestRectangleArea2(self, heights: List[int]) -> int:
         n = len(heights)
         maxArea = 0
@@ -30,3 +33,6 @@ class Solution:
         return maxArea
     
 print(Solution().largestRectangleArea([2, 1, 5, 6, 2, 3]))
+
+
+###############################################################################################

@@ -18,6 +18,7 @@ class Solution:
 
         return res
     
+#====================================================================================================    
 
     def characterReplacement(self, s: str, k: int) -> int:
         count = defaultdict(int)  # Using defaultdict to handle frequency
@@ -39,4 +40,4 @@ class Solution:
 
         return res
 
-
+print(Solution().characterReplacement('BBBB', 1))

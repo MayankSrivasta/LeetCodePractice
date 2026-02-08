@@ -16,10 +16,10 @@ class Solution:
             res += len(mids)
 
         return res
-    
 
-    #  s.find(c) or rfind(c) returns -1 incase if a character is not found
+#====================================================================================================
 
+#  s.find(c) or rfind(c) returns -1 incase if a character is not found
 #   iterate on Middle Character
 #   this approach goes from mid to sides to calculate the characters
     def countPalindromicSubsequence(self, s: str) -> int:

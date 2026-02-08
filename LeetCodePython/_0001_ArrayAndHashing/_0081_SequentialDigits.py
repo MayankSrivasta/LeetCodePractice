@@ -20,6 +20,8 @@ class Solution:
                 queue.append(n * 10 + (ones + 1))
         
         return res
+
+#====================================================================================================
     
     # sliding window approach
     # time complexity - O(1)
@@ -51,6 +53,8 @@ class Solution:
 # Since 36 is a constant, the asymptotic time complexity is: 𝑂(1)
 # Thus, even though it looks like O(n^2), it is actually O(1) in practice.
 # this is for sliding window
+
+#====================================================================================================
 
 #   AlgoMonster Solution:-
     def sequentialDigitsA(self, low: int, high: int) -> List[int]:

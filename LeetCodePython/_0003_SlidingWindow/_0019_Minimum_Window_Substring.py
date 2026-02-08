@@ -1,5 +1,46 @@
 from collections import Counter
 class Solution:
+
+# High-Level Idea of This Approach
+# This is a two-phase sliding window problem:
+# Expand right until window satisfies requirement
+# Shrink left to try making it minimal
+# This pattern is extremely common in substring queries.
+
+# chatgpt
+# Short Code Template (Interview Form)
+
+    def minWindow(s, t):
+        if not t or not s: return ""
+        
+        tcount = Counter(t)
+        scount = Counter()
+        required = len(tcount)
+        formed = 0
+        
+        l = 0
+        res = (inf, None, None)   # (length, left, right)
+        
+        for r, ch in enumerate(s):
+            scount[ch] += 1
+            
+            if scount[ch] == tcount[ch]:
+                formed += 1
+            
+            while formed == required:
+                if r - l + 1 < res[0]:
+                    res = (r - l + 1, l, r)
+                    
+                scount[s[l]] -= 1
+                if scount[s[l]] < tcount[s[l]]:
+                    formed -= 1
+                l += 1
+        
+        _, L, R = res
+        return s[L:R+1] if L is not None else ""
+
+############################################################################################################
+
     # chatgpt
     # Input: s = "ADOBECODEBANC", t = "ABC"
     def minWindow2(self, s: str, t: str) -> str:
@@ -38,6 +79,38 @@ class Solution:
         
         return strRes
     
+############################################################################################################
+# solution submitted on leetcode
+class Solution:
+    def minWindow(self, s: str, t: str) -> str:
+        l = 0
+        minLength = float('inf')
+        tcount = Counter(t)
+        scount = Counter()
+        formed = 0
+        required = len(tcount)
+        str1 = ''
+        for r in range(len(s)):
+
+            scount[s[r]] += 1
+
+            if scount[s[r]] == tcount[s[r]]:
+               formed += 1
+            
+            while l <= r and formed == required:
+                if r - l + 1 < minLength:
+                    minLength = r - l + 1
+                    str1 = s[l : r + 1]
+                
+                scount[s[l]] -= 1
+                if s[l] in tcount and scount[s[l]] < tcount[s[l]]:
+                    formed -= 1
+                
+                l += 1
+
+        return str1
+
+
 print(Solution().minWindow('ADOBEACODEABANC', 'ABACA'))
 
 

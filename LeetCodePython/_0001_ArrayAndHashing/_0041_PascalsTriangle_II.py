@@ -13,6 +13,8 @@ class Solution:
             res = next_row
         return res
 
+#====================================================================================================
+
 # APPROACH - 2
     def getRow(self, rowIndex: int) -> List[int]:
         row = [1]

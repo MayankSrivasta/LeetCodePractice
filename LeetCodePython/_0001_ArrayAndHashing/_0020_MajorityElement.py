@@ -14,12 +14,29 @@ class Solution:
                 res = num
                 maxCount = count[num]
         return res
-    
+
+#====================================================================================================
+# solved using Counter Approach
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        res = 0
+        maxCount = 0
+        count = Counter(nums)
+
+        for num, cnt in count.items():
+            if maxCount < cnt:
+                maxCount = cnt
+                res = num
+        return res
+
+#====================================================================================================
+
     # APPRACH - 2 solved within single line
     def majorityElement(self, nums: List[int]) -> int:
         count = Counter(nums)  # Get frequency of each number
         return max(count, key=count.get)  # Return element with max frequency
 
+#====================================================================================================
     
     # approach - 3  Boyer-Moore Voting Algorithm - BEST APPROACH
     def majorityElement(self, nums: List[int]) -> int:
@@ -31,6 +48,7 @@ class Solution:
             count += (1 if candidate == num else -1)
         return candidate
     
+#====================================================================================================
 
 #   approach - 4
     def majorityElement(self, nums: List[int]) -> int:
@@ -44,8 +62,12 @@ class Solution:
 
         return result
 
+#====================================================================================================
+
 #      approach - 5
 #      Boyer-Moore Voting Algorithm - O(N)
+#  read it to understand the approach for it but this algo can only be used
+#  in this type or only in this problem only.
 #      https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm/
 
     def majorityElement2(self, nums: List[int]) -> int:

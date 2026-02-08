@@ -23,7 +23,8 @@ class Solution:
             res += prefix_count[remain]
             prefix_count[remain] += 1
         return res
-    
+
+#====================================================================================================
 
 # GitHub Copilot
 # To solve the problem of finding subarrays divisible by k, we use the prefix sum and remainder approach. Here's how the algorithm works step-by-step for the input nums = [4, 5, 0, -2, -3, 1] and k = 5:

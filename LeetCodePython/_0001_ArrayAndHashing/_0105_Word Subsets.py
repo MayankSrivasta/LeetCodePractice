@@ -24,6 +24,7 @@ class Solution:
                 res.append(w)
         return res
 
+#====================================================================================================
 
 # chatgpt solution
     def wordSubsets(self, words1: List[str], words2: List[str]) -> List[str]:

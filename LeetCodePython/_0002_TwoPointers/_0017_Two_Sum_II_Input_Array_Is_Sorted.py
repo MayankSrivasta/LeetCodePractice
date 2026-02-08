@@ -14,6 +14,8 @@ class Solution:
                 return [l + 1, r + 1]
         return []
     
+#========================================================================================================= 
+
     # the reason for writing this one is to learn the of writing the code ->  res += [l + 1, r + 1]
     def twoSum(self, num: List[int], target: int) -> List[int]:
         l, r = 0, len(num) - 1

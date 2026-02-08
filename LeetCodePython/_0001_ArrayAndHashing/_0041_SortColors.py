@@ -15,6 +15,8 @@ class Solution:
                 zero += 1
             nums[i] = 2  # Now assign 2 at the correct position
 
+#====================================================================================================
+
 #   using Counter approach for reducing code from above solution
     def sortColors(self, nums: List[int]) -> None:
         count = Counter(nums)  # Count occurrences of 0, 1, and 2
@@ -39,6 +41,8 @@ class Solution:
                 nums[index] = i
                 index += 1
 
+#====================================================================================================
+
 #   Dutch National Flag Algorithm - Best Solution for it.
     def sortColors(self, nums: List[int]) -> None:
         low, mid, high = 0, 0, len(nums) - 1
@@ -57,3 +61,14 @@ class Solution:
 
 sol = Solution()
 sol.sortColors1([2,0,2,1,1,0])
+
+#====================================================================================================
+
+# Bonus 🧠 — Mapping to LeetCode Patterns
+
+# This problem introduces you to:
+
+# ✔ Counting sort (Counter)
+# ✔ Bucket frequency (like Top K elements)
+# ✔ 3-way partitioning (DNF)
+# ✔ Prefix patterns (indirectly when k > 3)

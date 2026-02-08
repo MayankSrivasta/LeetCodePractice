@@ -15,7 +15,8 @@ class Solution:
                     res.append(word)
                     break  # Avoid duplicates if word is found multiple times
         return res
-  
+
+# ====================================================================================================
     
 #   from Leetcode solution:-
     def stringMatching2(self, words: List[str]) -> List[str]:
@@ -27,6 +28,12 @@ class Solution:
                     break
         return res    
 
+# ====================================================================================================
+
+# from Neetcode.io solution:-
+# https://neetcode.io/solutions/string-matching-in-an-array
 # else you can use other STRING MATCHING ALGO:-
 # 1. KMP - difficult algo.
 # 2. Rabin Karp - most optimal- difficult algo.
+# 3. Z-Algorithm
+# 4. Trie

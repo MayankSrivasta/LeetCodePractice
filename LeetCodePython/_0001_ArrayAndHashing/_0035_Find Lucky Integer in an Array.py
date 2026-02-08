@@ -10,6 +10,7 @@ def findLucky(arr):
             lucky = max(lucky, num)
     return lucky
 
+#====================================================================================================
 
 # Approach 2: Dictionary (manual frequency map)
 def findLucky(arr):
@@ -23,6 +24,8 @@ def findLucky(arr):
             lucky = max(lucky, num)
     
     return lucky
+
+#====================================================================================================
 
 # approach 3 using defaultdict
 def findLucky(arr):

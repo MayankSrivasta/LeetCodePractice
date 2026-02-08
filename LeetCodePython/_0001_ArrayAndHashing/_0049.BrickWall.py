@@ -14,6 +14,7 @@ class Solution:
 
         return len(wall) - max(countGap.values())    # Total number of rows - Max gap
 
+#====================================================================================================
 
 # APPROACH - 2
     def leastBricks(self, wall: List[List[int]]) -> int:
@@ -30,6 +31,8 @@ class Solution:
             # Calculate minimum bricks crossed by subtracting the max gap count from total rows
             maxGaps = max(countGap.values(), default=0)
             return len(wall) - maxGaps
+
+#====================================================================================================
 
     def leastBricks2(self, wall: List[List[int]]) -> int:
         hashmap = {}

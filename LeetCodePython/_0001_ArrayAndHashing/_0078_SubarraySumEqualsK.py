@@ -25,6 +25,7 @@ class Solution:
                     res += 1
         return res
     
+#===========================================================================================================   
 
     def subarraySum(self, nums: List[int], k: int) -> int:
         res = 0
@@ -44,6 +45,8 @@ class Solution:
 
         return res
     
+#===========================================================================================================    
+
     # chatgpt
     def subarraySum1(self, nums: List[int], k: int) -> int:
         res = 0
@@ -59,4 +62,5 @@ class Solution:
         return res
 
 # Solution().subarraySum1([1, -1, 1, 1, 1, 1, 1], 3)
-print(Solution().subarraySum1([1, 2, 10, 11, 12], 3))
+# print(Solution().subarraySum1([1, 2, 10, 11, 12], 3))
+print(Solution().subarraySum1([1, 2, 3, 4, 5], 3))

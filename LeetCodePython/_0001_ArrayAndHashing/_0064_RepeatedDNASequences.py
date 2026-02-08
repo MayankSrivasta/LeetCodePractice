@@ -14,6 +14,8 @@ class Solution:
             seen.add(cur)
         return list(res)
 
+#====================================================================================================
+
     # hashmap
     def findRepeatedDnaSequences(self, s: str) -> List[str]:
         if len(s) < 10:
@@ -28,6 +30,8 @@ class Solution:
                 res.append(cur)
 
         return res
+
+#====================================================================================================
 
     # Rabin-Karp Algorithm (Double Hashing)
     def findRepeatedDnaSequences(self, s: str) -> List[str]:

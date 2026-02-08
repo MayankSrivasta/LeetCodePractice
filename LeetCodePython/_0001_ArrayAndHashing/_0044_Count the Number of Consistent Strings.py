@@ -12,7 +12,9 @@ class Solution:
                     res -= 1
                     break
         return res
-    
+
+#====================================================================================================
+
     # approach - 2 chatgpt
 def countConsistentStrings(allowed: str, words: List[str]) -> int:
     allowed_set = set(allowed)
@@ -22,6 +24,7 @@ def countConsistentStrings(allowed: str, words: List[str]) -> int:
             res += 1
     return res
 
+#====================================================================================================
 
 # approach-3 chatgpt
 def countConsistentStrings(allowed: str, words: List[str]) -> int:

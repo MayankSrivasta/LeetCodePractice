@@ -11,6 +11,8 @@ class Solution:
                     return True
         return False
 
+#====================================================================================================
+
     # HashMap + Prefix Sum
     # go through video 10:30 min to understand the edge case {0 : -1}
     def checkSubarraySum(self, nums: List[int], k: int) -> bool:

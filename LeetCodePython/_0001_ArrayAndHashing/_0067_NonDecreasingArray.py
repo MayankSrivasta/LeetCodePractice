@@ -20,8 +20,9 @@ class Solution:
 
         return True  # Array can be made non-decreasing with at most one modification
 
+#====================================================================================================
 
-    # testing with list -> [3, 4, 2, 5]
+# testing with list -> [3, 4, 2, 5]
 # forward traversal approach       -> chatgpt solution
     def checkPossibility(self, nums: List[int]) -> bool:
         modified = False  # Boolean flag to track if a modification was made
@@ -41,7 +42,9 @@ class Solution:
 
         return True  # Array can be made non-decreasing with at most one modification
 
-    # testing with list -> [3, 4, 2, 5]
+#====================================================================================================
+
+# testing with list -> [3, 4, 2, 5]
 # NeetCode.io solution
     def checkPossibility2(self, nums: list[int]) -> bool:
         changed = False

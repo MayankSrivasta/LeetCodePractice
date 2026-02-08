@@ -8,7 +8,9 @@ class Solution:
             elif stack:
                 stack.pop()
         return (len(stack) + 1) // 2
-    
+
+#====================================================================================================
+
     # greedy approach
     # https://www.youtube.com/watch?v=kYTQgaNDc9o
     def minSwaps2(self, s: str) -> int:

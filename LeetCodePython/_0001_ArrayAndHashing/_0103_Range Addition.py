@@ -47,6 +47,8 @@ class Solution:
 print(Solution().getModifiedArray(5, ([[1, 3, 2], [2, 4, 3], [0, 2, -2]])))
 # Output: [-2, 0, 3, 5, 3]
 
+#====================================================================================================
+
 # Explanation:
 # Initial state: [0, 0, 0, 0, 0]
 # After applying the first update [1, 3, 2]: [0, 2, 2, 2, 0]

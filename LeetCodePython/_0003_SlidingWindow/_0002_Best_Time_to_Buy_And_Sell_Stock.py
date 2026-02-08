@@ -14,6 +14,8 @@ class Solution:
             r += 1
         return maxP
     
+#====================================================================================================
+
     #  Dynamic Programming
     def maxProfit2(self, prices: List[int]) -> int:
         maxP = 0

@@ -23,7 +23,9 @@ class Solution:
         # Because the problem guarantees at least one odd and one even
         # We don't need to handle the case where one of them is missing
         return max_odd - min_even
-    
+
+#====================================================================================================
+
     # above ones cleaner approach
     def maxDifference(self, s: str) -> int:
         freq = Counter(s)
@@ -38,8 +40,7 @@ class Solution:
         
         return max_odd - min_even
 
-
-    
+#====================================================================================================
     # chatgpt
     def maxDifference(s: str) -> int:
         # Step 1: Count frequencies of each character

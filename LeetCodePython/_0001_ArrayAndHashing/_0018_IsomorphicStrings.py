@@ -7,6 +7,8 @@
 
 class Solution:
 
+# Isomorphic -> Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+
     # Input: s = "egg", t = "add"
     # Output: true
 
@@ -19,7 +21,9 @@ class Solution:
             sMap[schar] = tchar
             tMap[tchar] = schar
         return True
-    
+
+#====================================================================================================
+
 #   solving using zip is much more efficient, logically easy to understand
     def isIsomorphic(self, s: str, t: str) -> bool:
         sMap, tMap = {}, {}

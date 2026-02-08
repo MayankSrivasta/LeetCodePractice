@@ -28,6 +28,8 @@ class Solution:
                 res.append(num)
                 if len(res) == k:
                     return res  # Stop early when we have K elements
+                
+# ===============================================================================================
 
 #   written in much clearer form:
 # check FREQ COUNTER diagram for better understanding

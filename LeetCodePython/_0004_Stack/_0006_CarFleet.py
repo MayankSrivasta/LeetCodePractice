@@ -23,6 +23,8 @@ class Solution:
                 stack.pop()
         return len(stack)
     
+################################################################################################
+
     def carFleet2(self, target : int, position : List[int], speed: List[int]) -> int:
         pair = [(p, s) for p, s in zip(position, speed)]
         pair.sort(reverse = True)

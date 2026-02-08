@@ -16,6 +16,7 @@ class Solution:
                 res.append(num)
         
         return res
+#====================================================================================================
     
     # negative marking approach - neetcode.io
     def findDuplicates(self, nums: List[int]) -> List[int]:
@@ -28,6 +29,7 @@ class Solution:
             nums[idx] = -nums[idx]
         
         return res
+#====================================================================================================
     
 # the approach for this solution is simple:-
 # in case 3 3 2 2

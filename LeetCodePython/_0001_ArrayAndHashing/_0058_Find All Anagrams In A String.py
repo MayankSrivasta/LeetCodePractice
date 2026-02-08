@@ -24,6 +24,9 @@ class Solution:
                 del sCount[s[k]]
         return res
 
+#====================================================================================================
+
+
     # from Chatgpt
     def findAnagrams1(self, s: str, p: str):
         res = []

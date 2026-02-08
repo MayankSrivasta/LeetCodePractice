@@ -9,6 +9,8 @@ class Solution:
         return nums
     # [3, 5, 1, 6, 2, 4]
 
+#====================================================================================================
+
     def wiggleSortSelf(self, nums: List[int]) -> None:
         for i in range(1, len(nums)):
             if ((i % 2 == 1 and nums[i] < nums[i - 1]) or

@@ -17,6 +17,7 @@ class Solution:
             balls += int(boxes [i])
         return res
 
+#====================================================================================================
 
 #   Cherry Coding [IIT-G] youtube channel...
     def minOperations2(self, boxes: str) -> List[int]:
@@ -47,6 +48,8 @@ class Solution:
 
 print(Solution().minOperations('001011'))
 
+#====================================================================================================
+
 # 🔍 How It Works:
 # ahead tracks number of balls to the right of the current index.
 # behind tracks number of balls to the left.
@@ -54,7 +57,7 @@ print(Solution().minOperations('001011'))
 # For each subsequent index, we incrementally update the result using:
 # res[i] = res[i-1] - ahead + behind
 
-
+#====================================================================================================
 
 class Solution:
     def minOperations(self, boxes: str) -> List[int]:

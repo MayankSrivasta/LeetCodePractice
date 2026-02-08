@@ -25,6 +25,7 @@ class Solution:
                 res = (res + odd_cnt) % MOD
                 even_cnt += 1
         return res
+#====================================================================================================
     
 #   chatgpt
 #   below is the code for Counting Even:-

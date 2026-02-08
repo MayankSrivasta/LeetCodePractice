@@ -10,6 +10,8 @@ class Solution:
                 missing_numbers.append(i)
         return missing_numbers
 
+#====================================================================================================
+
     # the same above line can be written like this also in a single line
     # approach - 2
     def findDisappearedNumbers2(self, nums: List[int]) -> List[int]:

@@ -11,6 +11,7 @@ class Solution:
 sol = Solution()
 print(sol.minOperations("0100"))
 
+#====================================================================================================
 
 # chatgpt
 def minOperations(s: str) -> int:

@@ -3,6 +3,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "_0039_FindWordsThatCanBeFormedByCharacters",
+        "request": "launch",
+        "mainClass": "_0001_ArrayAndHashing._0039_FindWordsThatCanBeFormedByCharacters",
+        "projectName": "LeetCodePython_a728ed22"
+      },
+      {
+        "type": "java",
         "name": "_0024_FindWordsThatCanBeFormedByCharacters",
         "request": "launch",
         "mainClass": "_0001_ArrayAndHashing._0024_FindWordsThatCanBeFormedByCharacters",

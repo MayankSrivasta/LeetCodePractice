@@ -14,6 +14,8 @@ class Solution:
             res[tuple(arr)].append(str)
         return list(res.values())
 
+# ====================================================================================================
+
 # Purpose of Using tuple(arr)
 # The key idea is that lists are mutable and cannot be used as dictionary keys, whereas tuples are immutable and can be used as keys.
 
@@ -33,14 +35,18 @@ class Solution:
                 count[ord(c) - ord('a')] += 1
             res[tuple(count)].append(s)
         return list(res.values())
-    
+
+# ====================================================================================================
+
     # APPROACH - 2
     def groupAnagrams2(self, strs: List[str]) -> List[List[str]]:
         res = defaultdict(list)
         for s in strs:
             res[tuple(sorted(s))].append(s)
         return list(res.values())
-    
+
+# ====================================================================================================
+
     # APPROACH - 3 using Counter
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         res = defaultdict(list)  # Dictionary to store grouped anagrams

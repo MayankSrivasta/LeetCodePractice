@@ -11,7 +11,7 @@ class Solution:
 
         return ''.join(str_arr)
 
-from typing import List
+#====================================================================================================
 
 class Solution:
     def shiftingLetters(self, s: str, shifts: List[int]) -> str:

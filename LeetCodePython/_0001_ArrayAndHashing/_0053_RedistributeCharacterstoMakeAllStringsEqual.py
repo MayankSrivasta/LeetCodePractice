@@ -11,7 +11,9 @@ class Solution:
             if char_cnt[c] % len(words) :
                 return False
         return True
-    
+
+#====================================================================================================
+
     # approach - 2
     def makeEqual(self, words: List[str]) -> bool:
         charCount = Counter("".join(words))  # Count all characters in words

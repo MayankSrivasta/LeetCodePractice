@@ -2,7 +2,7 @@ from typing import List
 from collections import defaultdict
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        # this data structure will be a hashmap with key as empty with each key will have empty
+        # this data structure will be a hashmap in which key will be empty & each key will have empty
         # set attached to it
         cols = defaultdict(set)
         rows = defaultdict(set)

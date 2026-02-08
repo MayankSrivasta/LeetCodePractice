@@ -16,6 +16,8 @@ class Solution:
             count[num] += 1
         return res
 
+#====================================================================================================
+
 # chatgpt solutions :-
     def numIdenticalPairs(self, nums: List[int]) -> int:
         ans = 0
@@ -28,6 +30,7 @@ class Solution:
                 freq[x] = 1
         return ans
 
+#====================================================================================================
 
     # 1st approach
     def numIdenticalPairs1(self, nums: List[int]) -> int:
@@ -36,7 +39,9 @@ class Solution:
         for n, c in count.items():
             res += c * (c - 1) // 2
         return res
-    
+
+#====================================================================================================
+
     # 2nd Approach
     def numIdenticalPairs2(self, nums: List[int]) -> int:
         res = 0

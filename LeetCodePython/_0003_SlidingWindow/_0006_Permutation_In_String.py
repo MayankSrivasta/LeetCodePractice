@@ -1,5 +1,6 @@
 from collections import Counter
 class Solution:
+# fixed size sliding window protocol
 #   sliding window + hashmap
     def checkInclusion2(self, s1: str, s2: str) -> bool:
         n, m = len(s1), len(s2)

@@ -12,6 +12,8 @@ class Solution:
                 nums[k] = nums[i]
                 k += 1
         return k
+    
+#====================================================================================================
 
 # approach - 2
 # To solve this problem using the opposite approach, instead of shifting elements forward, 

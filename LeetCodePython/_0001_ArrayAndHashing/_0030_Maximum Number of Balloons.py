@@ -16,6 +16,8 @@ class Solution:
         mp['o'] //= 2
         return min(mp.values())
 
+#====================================================================================================
+
     # chatgpt solution
     # solution - 2
     def maxNumberOfBalloons(self, text: str) -> int:
@@ -27,6 +29,8 @@ class Solution:
                    counts[ord('o') - ord('a')] // 2,
                    counts[ord('n') - ord('a')])
 
+#====================================================================================================
+
 # solution - 3
 # BEST AND EASY TO UNDERSTAND SOLUTIONS
     def maxNumberOfBalloons(self, text: str) -> int:
@@ -37,6 +41,7 @@ class Solution:
             res = min(res, textCount[c] // ballCount[c])
         return res
 
+#====================================================================================================
 
     def maxNumberOfBalloons(self, text: str) -> int:
         # Count the frequency of each character in the input text
